@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script defer src=" https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js "> </script>
+    <script defer src="./js/list5.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="btn btn-danger navbar-brand" href="./index.html">Lotería</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Menú Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./paginas/lista.html">Lista de cartones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./paginas/crear.html">Crear Carton</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1 class="py-5 text-center">Bienvenido, te regalamos estos 5 cartones para empezar:</h1>
+        <div id="containerCards">
+
+        </div>
+    </main>
+    <template id="templateCard">
+        <div class="card w-50 my-3 ">
+            <div class="card-body container-fluid">
+                <h5 class="card-title"><b>ID: </b><span id="idCard"> 0</span></h5>
+                <div id="containerNum" class="row ">
+
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="templatoNum">
+        <div class="card col">
+            <div class="number">
+                <p id="num">1</p>
+            </div>
+        </div>
+    </template>
+</body>
+
+</html>
